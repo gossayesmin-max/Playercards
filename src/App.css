@@ -2,7 +2,7 @@
 body {
   margin: 0;
   min-width: 320px;
-  background-color: #5eb065;
+  background-color: #020226;
   color: #17212b;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -19,19 +19,19 @@ header {
 }
 
 header h1 {
-  color: #210a75;
+  color: #4425b1;
   font-size: 3.5rem;
   font-weight: 800;
   letter-spacing: 1px;
 }
 
 header .lead {
-  color: #032339;
+  color: #0b4d79;
   font-size: 1.2rem;
 }
 
 .eyebrow {
-  color: #1d0367;
+  color: #4624a5;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 4px;

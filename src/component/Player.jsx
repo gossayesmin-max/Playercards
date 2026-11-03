@@ -9,7 +9,7 @@ function Player({
   image
 }) {
   return (
-    <Card className="h-100" style={{ width: '100%' }}>
+    <Card className="h-100 player-card" style={{ width: '100%' }}>
 
       <Card.Img
         variant="top"

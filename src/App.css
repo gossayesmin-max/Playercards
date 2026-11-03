@@ -1,0 +1,115 @@
+/* GENERAL */
+body {
+  margin: 0;
+  min-width: 320px;
+  background-color: #5eb065;
+  color: #17212b;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  padding-bottom: 5rem;
+}
+
+/* HEADER */
+header {
+  padding: 45px 20px 35px;
+  text-align: center;
+}
+
+header h1 {
+  color: #210a75;
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+header .lead {
+  color: #032339;
+  font-size: 1.2rem;
+}
+
+.eyebrow {
+  color: #1d0367;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+/* PLAYER CARDS */
+.player-card {
+  height: 100%;
+  border: none !important;
+  border-radius: 15px !important;
+  overflow: hidden;
+  background-color: #ffffff;
+  
+  box-shadow: 0 5px 15px rgba(20, 30, 20, 0.15);
+
+  transition: all 0.35s ease !important;
+}
+
+/* CARD HOVER EFFECT */
+.player-card:hover {
+  transform: translateY(-12px) scale(1.02) !important;
+
+  box-shadow: 
+    0 15px 30px rgba(0, 0, 0, 0.25),
+    0 0 15px rgba(29, 3, 103, 0.15) !important;
+}
+
+/* PLAYER IMAGE */
+.player-card .card-img-top {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  object-position: center 20%;
+  transition: transform 0.4s ease;
+}
+
+.player-card:hover .card-img-top {
+  transform: scale(1.06);
+}
+
+/* CARD CONTENT */
+.player-card .card-body {
+  padding: 22px 15px;
+  text-align: center;
+}
+
+.player-card .card-title {
+  color: #210a75;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.player-card .card-text {
+  color: #343a40;
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 575px) {
+  header h1 {
+    font-size: 2.3rem;
+  }
+
+  header {
+    padding: 35px 15px;
+  }
+}
+
+/* ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+  .player-card,
+  .player-card .card-img-top {
+    transition: none !important;
+  }
+
+  .player-card:hover {
+    transform: none !important;
+  }
+}
